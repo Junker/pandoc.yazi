@@ -13,7 +13,8 @@ ya pack -a Junker/pandoc
 ```toml
 [plugin]
 prepend_previewers = [
-    { mime = "application/{openxmlformats-officedocument.wordprocessingml.document}", run = "pandoc" },
+    { mime = "application/openxmlformats-officedocument.wordprocessingml.document", run = "pandoc" },
+    { name = ".xlsx", run = "pandoc" },
 ]
 ```
 
