@@ -14,7 +14,7 @@ ya pack -a Junker/pandoc
 [plugin]
 prepend_previewers = [
     { mime = "application/openxmlformats-officedocument.wordprocessingml.document", run = "pandoc" },
-    { name = ".xlsx", run = "pandoc" },
+    { name = "*.xlsx", run = "pandoc" },
 ]
 ```
 
